@@ -1,0 +1,20 @@
+# Terraform
+
+Using the `terraform` folder, create a Terraform project that will create two EC2 instances with name `aws_1` and `aws_2`. both instances are built using `t2.micro`.
+
+
+resource "aws_instance" "aws_ec2"
+{
+launch_instance = 2
+ami_id =" "
+type = t2.micro
+key = pluto
+security_group = "pluto_sg"
+}
+tags
+{
+Name = "aws_1"
+Name ="aws_2"
+env = "us-easet-1"
+}
+
